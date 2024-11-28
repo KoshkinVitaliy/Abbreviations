@@ -18,7 +18,7 @@ public class AbbreviationTest {
     public void testEmptyString() {
         assertEquals(
                 "",
-                abbreviation.showAbbreviations("asap"),
+                abbreviation.showAbbreviations(""),
                 "Method must return empty message if the message has no symbols in it."
         );
     }
@@ -35,7 +35,7 @@ public class AbbreviationTest {
     @Test
     public void testMessage() {
         assertEquals(
-                "Tomorrow me must play together as soon as possible.",
+                "Tomorrow we must play together as soon as possible.",
                 abbreviation.showAbbreviations("2mor we must play together asap."),
                 "Method must return all abbreviations with the message " +
                         "and make correct spaces between them."
